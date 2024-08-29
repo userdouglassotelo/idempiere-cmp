@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="ni.cmp.override.ui">
+   <implementation class="ni.cmp.override.form.WSQLProcess"/>
+   <property name="service.ranking" type="Integer" value="99"/>
+   <service>
+      <provide interface="org.adempiere.webui.factory.IFormFactory"/>
+   </service>
+</scr:component>
