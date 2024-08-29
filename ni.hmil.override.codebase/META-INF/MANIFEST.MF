@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PAME DEVELOPER - Code Base - SobreEscritura
+Bundle-SymbolicName: ni.idempiere.override.codebase;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: GPM
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-ActivationPolicy: lazy
+Jetty-WarFragmentFolderPath: /
+Require-Bundle: org.adempiere.base;bundle-version="10.0.0",
+ org.adempiere.plugin.utils;bundle-version="10.0.0"
+Service-Component: OSGI-INF/OverrideCalloutFactory.xml,OSGI-INF/OverrideModelFactory.xml,OSGI-INF/OverrideProcessFactory.xml,
+ OSGI-INF/OverrideModelValidator.xml
+Import-Package: org.osgi.service.event;version="1.4.0"
+Bundle-Activator: org.adempiere.plugin.utils.AdempiereActivator
